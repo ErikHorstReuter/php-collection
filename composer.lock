@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ErikHorstReuter/generic-traits.git",
-                "reference": "c53b3b944c22a8eecd1e82d3ed14f4e6985b498a"
+                "reference": "2651609530f7edb04ebe18a9fa95779eeb237cc8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ErikHorstReuter/generic-traits/zipball/c53b3b944c22a8eecd1e82d3ed14f4e6985b498a",
-                "reference": "c53b3b944c22a8eecd1e82d3ed14f4e6985b498a",
+                "url": "https://api.github.com/repos/ErikHorstReuter/generic-traits/zipball/2651609530f7edb04ebe18a9fa95779eeb237cc8",
+                "reference": "2651609530f7edb04ebe18a9fa95779eeb237cc8",
                 "shasum": ""
             },
             "default-branch": true,
@@ -40,7 +40,7 @@
                 "source": "https://github.com/ErikHorstReuter/generic-traits/tree/main",
                 "issues": "https://github.com/ErikHorstReuter/generic-traits/issues"
             },
-            "time": "2025-10-20T19:19:18+00:00"
+            "time": "2025-10-20T19:57:16+00:00"
         }
     ],
     "packages-dev": [],
