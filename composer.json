@@ -1,0 +1,26 @@
+{
+    "version": "0.1",
+    "name": "erik/php-collection",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Erik\\PhpCollection\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Erik Horst Reuter",
+            "email": "erik.horst.reuter@outlook.de"
+        }
+    ],
+    "require": {
+        "erik/generic-traits": "dev-main"
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/ErikHorstReuter/generic-traits.git"
+        }
+    ]
+}
