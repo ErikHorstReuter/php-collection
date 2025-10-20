@@ -2,27 +2,42 @@
 
 namespace Erik\PhpCollection\Collection;
 
-use ArrayAccess;
-
 
 class Collection extends AbstractCollection implements ArrayCollectionInterface
 {
-
+    /** @var array<int|string, mixed> */
     private array $items = [];
 
-    protected function &items(): array|ArrayAccess
+    /**
+     * @return array<int|string, mixed> by-ref
+     */
+    protected function &items(): array
     {
         return $this->items;
     }
 
     public function __construct(iterable $items = [])
     {
-        if (gettype($items) === 'array') {
-            $this->items = $items;
-        } else {
-            foreach ($items as $item) {
-                $this->items[] = $item;
-            }
+        foreach ($items as $key => $value) {
+            $this->items[$key] = $value;
         }
+    }
+
+    public function add(mixed $item, int|string|null $key = null): static
+    {
+        if ($key === null) {
+            $this->items[] = $item;
+        } else {
+            $this->items[$key] = $item;
+        }
+        return $this;
+    }
+
+    public function addAll(iterable $items): static
+    {
+        foreach ($items as $key => $value) {
+            $this->add($value, $key);
+        }
+        return $this;
     }
 }

@@ -3,4 +3,11 @@
 namespace Erik\PhpCollection\Collection;
 
 
-interface ArrayCollectionInterface extends CollectionInterface {}
+use ArrayAccess;
+
+interface ArrayCollectionInterface extends CollectionInterface
+{
+    function add(mixed $item, int|string|null $key = null): static;
+
+    function addAll(iterable $items): static;
+}
